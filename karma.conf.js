@@ -17,9 +17,9 @@ module.exports = function(config) {
     files: [
       { pattern: 'test/*.css', included: false },
 
-      'node_modules/lodash/lodash.js',
+      'node_modules/lodash/index.js',
       'node_modules/d3/d3.js',
-      'dist/dagre-d3.js',
+      'build/dist/dagre-d3.js',
 
       'node_modules/chai/chai.js',
       'test/bundle-test.js'
@@ -61,7 +61,7 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome', 'Safari', 'Firefox', 'PhantomJS'],
+    browsers: ['Chrome', 'Firefox', 'PhantomJS'],
 
 
     // Continuous Integration mode
